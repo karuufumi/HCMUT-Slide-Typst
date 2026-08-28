@@ -1,5 +1,29 @@
+# Operating-system files
 .DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# Editors and temporary files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Local inspection and scratch material
+/tmp/
+/.cache/
+
+# Reference material kept outside the Typst source project
 /Slide/
+
+# Typst generated/cache files
+/.typst/
+*.typst-cache
+
+# LaTeX auxiliary files from the reference project
 *.aux
 *.log
 *.out
@@ -12,8 +36,9 @@
 *.vrb
 *.fls
 *.fdb_latexmk
-/.typst/
+
+# Generated presentation output
+/output/*.pdf
 /output/*.aux
 /output/*.log
 /output/*.out
-/Slide/*

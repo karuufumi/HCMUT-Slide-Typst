@@ -41,7 +41,7 @@
     #v(5mm)
     #line(length: 52%, stroke: 1pt + black)
     #v(4mm)
-    #grid(columns: (auto, auto), column-gutter: 7mm, row-gutter: 1mm,
+    #grid(columns: (auto, auto), column-gutter: 7mm, row-gutter: 5mm,
       text(size: 13pt, fill: black)[Supervisor:], text(size: 13pt, weight: "bold", fill: black)[#supervisor],
       text(size: 13pt, fill: black)[Student:], text(size: 13pt, fill: black)[#student],
     )
@@ -49,40 +49,40 @@
 }
 
 #let meta-row(label, value) = grid(columns: (1fr, 1fr), column-gutter: 5mm,
-  align(right)[#text(size: 18pt)[#label:]],
-  align(left)[#text(size: 18pt, weight: "bold", fill: bk-blue)[#value]],
+  align(right)[#text(size: 17pt)[#label:]],
+  align(left)[#text(size: 17pt, weight: "bold", fill: bk-blue)[#value]],
 )
 
 #let meta-information(rows: (("Supervisor email", "email@hcmut.edu.vn"), ("Student email", "email@hcmut.edu.com"), ("Drive Workspace", "Google Drive"), ("Main Sheet", "Google Sheet"), ("Github", "username@github"), ("References Sheet", "Google Sheet"))) = {
   set page(width: 13.333in, height: 7.5in, margin: (top: 15mm, bottom: 14mm, left: 18mm, right: 18mm), background: standard-background())
   pagebreak()
-  text(size: 24pt, fill: bk-dark)[Meta Information]
+  text(size: 30pt, fill: bk-dark)[Meta Information]
   v(3mm)
   align(center)[
-    #rect(fill: panel, radius: 18pt, inset: 15mm, width: 90%)[
+    #rect(fill: panel, radius: 18pt, inset: 9mm, width: 90%)[
       #for (label, value) in rows {
         meta-row(label, value)
-        v(6mm)
+        v(3mm)
       }
     ]
   ]
 }
 
-#let section-item(index, item) = text(size: 20pt, fill: bk-blue)[#(index + 1)  #item]
+#let section-item(section-number, index, item) = text(size: 22pt, fill: bk-blue)[#section-number.#(index + 1)  #item]
 
-#let section-contents(title, items) = {
+#let section-contents(section-number, title, items) = {
   set page(width: 13.333in, height: 7.5in, margin: (top: 15mm, bottom: 14mm, left: 18mm, right: 18mm), background: standard-background())
   pagebreak()
-  text(size: 24pt, fill: bk-dark)[Section Contents]
+  text(size: 30pt, fill: bk-dark)[#section-number.  #title]
   v(3mm)
   align(center)[
     #rect(fill: panel, radius: 18pt, inset: 15mm, width: 90%)[
-      #text(size: 17pt, fill: bk-blue)[#title]
-      #v(6mm)
-      #for (index, item) in items.enumerate() {
-        section-item(index, item)
-        if index < items.len() - 1 { v(4mm) }
-      }
+      #align(left)[
+        #for (index, item) in items.enumerate() {
+          section-item(section-number, index, item)
+          if index < items.len() - 1 { v(7mm) }
+        }
+      ]
     ]
   ]
 }
@@ -91,10 +91,10 @@
   set page(width: 13.333in, height: 7.5in, margin: (top: 18mm, bottom: 14mm, left: 18mm, right: 18mm), background: standard-background())
   pagebreak()
   if title != none {
-    text(size: 25pt, weight: "bold", fill: bk-dark)[#title]
+    text(size: 32pt, weight: "bold", fill: bk-dark)[#title]
     v(4mm)
   }
-  align(left + horizon, body)
+  move(dy: -2.5mm, align(left + horizon, body))
 }
 
 #let section-divider(title, subtitle: none) = {
@@ -107,12 +107,12 @@
   ])
 }
 
-#let agenda(items) = slide(title: "Agenda", [
+#let agenda(items) = slide(title: "Contents", [
   #rect(fill: panel, radius: 8pt, inset: 12pt, width: 100%)[
     #for (index, item) in items.enumerate() {
-      text(size: 22pt, weight: "bold", fill: bk-blue)[#(index + 1)]
+      text(size: 24pt, weight: "bold", fill: bk-blue)[#(index + 1)]
       h(8pt)
-      text(size: 22pt, fill: ink)[#item]
+      text(size: 24pt, fill: ink)[#item]
       if index < items.len() - 1 { v(8pt); line(length: 100%, stroke: .5pt + luma(210)) }
     }
   ]
