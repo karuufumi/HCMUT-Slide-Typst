@@ -17,5 +17,5 @@
 #include "content/sections/04-conclusion.typ"
 
 #slide(title: "References", [
-  #bibliography("references.bib", style: "ieee")
+  #bibliography("references.bib", title: none, style: "ieee")
 ])
