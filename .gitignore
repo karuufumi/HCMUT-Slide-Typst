@@ -42,3 +42,5 @@
 /output/*.aux
 /output/*.log
 /output/*.out
+
+AGENTS.md
