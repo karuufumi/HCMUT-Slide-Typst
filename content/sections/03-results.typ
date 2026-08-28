@@ -1,7 +1,7 @@
 #import "../../presentation.typ": *
 
 #slide(title: "Results and discussion", [
-  == Results
+  *Results*
   #grid(columns: (1fr, 1fr), gutter: 12mm,
     block(fill: bk-light, inset: 10pt, radius: 5pt)[
       *Strengths*#linebreak()

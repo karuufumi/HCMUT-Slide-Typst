@@ -1,0 +1,225 @@
+PERIODIC REPORT
+HIGH PERFORMANCE COMPUTING
+                  #XX
+  Reporting Period: 25_MMDD - 25_MMDD
+
+    Supervisor:   Dr. Thanh-Dang Diep
+      Student:    Nguyễn Tiến Khang
+Meta Information
+
+
+                   Supervisor email:   email@hcmut.edu.vn
+
+                     Student email:    email@hcmut.edu.com
+
+                   Drive Workspace:    Google Drive
+
+                        Main Sheet:    Google Sheet
+
+                            Github:    nguyenpanda@github
+
+                   References Sheet:   Google Sheet
+
+
+                                                             2/17
+Table of Contents
+
+
+
+
+     1. Introduction
+
+     2. Complex Examples
+
+     3. Citations
+
+
+
+
+                           3/17
+Section Contents
+
+
+
+
+     1. Introduction
+Project Overview
+
+
+
+
+    ▶ Lol: lmao ngu
+    ▶ Status: [DONE] C++/Python templates done, [WIP] LaTeX in progress.
+    ▶ Tools: LuaLaTeX, latexmk, Beamer, TiKZ.
+
+
+
+
+                                                                           5/17
+Section Contents
+
+
+
+
+     2. Complex Examples
+     2.1 Mathematics
+     2.2 TiKZ Diagram
+     2.3 Algorithms
+     2.4 Layouts
+     2.5 Code Snippets
+Mathematical Foundations
+
+     Euler’s Identity
+
+                                         𝑒𝑖𝜋 + 1 = 0
+
+     Schrödinger Equation
+
+                             𝜕              −ℏ2 2
+                        𝑖ℏ      Ψ(r, 𝑡) = [    ∇ + 𝑉 (r, 𝑡)] Ψ(r, 𝑡)
+                             𝜕𝑡             2𝑚
+
+  Matrix operations:
+                                 𝑎 𝑏     𝑥    𝑎𝑥 + 𝑏𝑦
+                                (     )×( )=(         )
+                                  𝑐 𝑑    𝑦    𝑐𝑥 + 𝑑𝑦
+
+                                                                       7/17
+Deep Learning Architecture (TiKZ)
+
+
+
+
+         Input      Conv 3x3          Max Pool    FC Layer        Output
+
+                 Feature Extraction              Classification
+
+
+
+
+                                                                           8/17
+Algorithm Implementation
+
+
+
+   Algorithm 1: Min-Max Normalization
+   Data: Input image 𝐼
+   Result: Normalized image 𝐼 ′
+ 1 𝑚𝑖𝑛, 𝑚𝑎𝑥 ← compute_range(𝐼);
+ 2 for each pixel 𝑝 ∈ 𝐼 do
+                 𝐼(𝑝)−𝑚𝑖𝑛
+ 3     𝐼 ′ (𝑝) ← 𝑚𝑎𝑥−𝑚𝑖𝑛  × 255;
+ 4 end
+
+
+
+
+                                        9/17
+Split Layout Examples
+
+
+
+    Left Column (Blocks)                    Right Column (Info)
+
+    Standard 50/50 split using:             You can place anything here:
+     ▶ columns environment                   ▶ Tables
+     ▶ column environment                    ▶ Graphics
+    This is great for comparing text with    ▶ Equations
+    images or code.
+
+
+
+
+                                                                           10/17
+Asymmetric Split (60/40)
+
+
+
+1   def analyze_data(data):              Observation
+2       # Complex math here
+3       result = [x**2 for x in data]    The left column takes
+4       return sum(result)               60% width for code,
+5
+                                         while this alert takes
+                      Processing Logic   35% for explanation.
+
+
+
+
+                                                                  11/17
+Source Code (C++ & Python)
+
+
+
+     main.cpp
+                                            1   import numpy as np
+ 1   #include <iostream>                    2
+
+ 2                                          3   def hello():
+ 3   int main() {                           4       print("Hello from Python!")
+ 4       // Hello Panda!                    5       return np.zeros(5)
+ 5       std::cout << "Hi!" << std::endl;   6
+
+ 6       return 0;                                         Code: Python Snippet
+ 7   }
+
+
+
+
+                                                                                  12/17
+Section Contents
+
+
+
+
+     3. Citations
+Citation Gallery
+
+
+
+
+    ▶ Foundational TeX: [1]
+    ▶ LaTeX Guide: [2], [3]
+    ▶ Literate Programming: [4]
+    ▶ Research Examples: [5], [6]
+
+
+
+
+                                    14/17
+Full Citation Example
+
+
+
+     Featured Reference
+     D. E. Knuth, The TEX Book. Addison-Wesley Professional, 1986
+
+     Another Full Citation
+     F. Mittelbach et al., The LATEX Companion, 2nd ed. Addison-Wesley Professional,
+     2004
+
+
+
+
+                                                                                       15/17
+  THANK YOU
+for your attention
+
+
+
+                     16/17
+References I
+   [1]   D. E. Knuth, The TEX Book. Addison-Wesley Professional, 1986.
+   [2]   L. Lamport, LATEX: a Document Preparation System, 2nd ed. Massachusetts:
+         Addison Wesley, 1994.
+   [3]   F. Mittelbach, M. Gossens, J. Braams, D. Carlisle, and C. Rowley, The LATEX
+         Companion, 2nd ed. Addison-Wesley Professional, 2004.
+   [4]   D. E. Knuth, “Literate programming,” The Computer Journal, vol. 27, no. 2,
+         pp. 97–111, 1984.
+   [5]   G. Foster, S. Gandrabur, P. Langlais, P. Plamondon, G. Russell, and M. Simard,
+         “Statistical machine translation: Rapid development with limited resources,” in
+         Proceedings of MT Summit IX, New Orleans, USA, 2003, pp. 110–119.
+   [6]   E. Alsolami, “An examination of keystroke dynamics for continuous user
+         authentication,” Ph.D. dissertation, Queensland University of Technology, 2012.
+                                                                                           17/17
+
